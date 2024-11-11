@@ -62,7 +62,8 @@ function Uploader() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!file) return;
-
+    const VITE_API_URL =
+      'https://potato-disease-classifier-backend-latest.onrender.com';
     const formData = new FormData();
     formData.append('file', file);
     clearPrediction();
@@ -71,9 +72,9 @@ function Uploader() {
 
     setLoading(true);
     try {
-      const apiUrl = import.meta.env.VITE_API_URL.endsWith('/predict')
-        ? import.meta.env.VITE_API_URL
-        : `${import.meta.env.VITE_API_URL}/predict`;
+      const apiUrl = VITE_API_URL.endsWith('/predict')
+        ? VITE_API_URL
+        : `${VITE_API_URL}/predict`;
 
       const response = await axios.post(apiUrl, formData, {
         headers: {
