@@ -1,0 +1,19 @@
+.upload-container {
+  font-family: 'Hubot-Sans', sans-serif;
+  min-height: calc(100vh - 10em);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation: load 2s forwards;
+}
+
+.upload-text {
+  text-align: center;
+  opacity: 1;
+  color: #d8ecf8;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+  background: linear-gradient(0deg, #d8ecf8 0, #62ed74 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

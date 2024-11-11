@@ -1,0 +1,23 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore model files if they are large and don’t need frequent updates
+*.keras
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.swp
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore frontend code if it's not needed for the backend
+../frontend/
+
+# Ignore other unnecessary files and directories
+node_modules/
+.env
