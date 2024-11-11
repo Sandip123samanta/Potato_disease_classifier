@@ -9,7 +9,7 @@ function PredictionCard({ confidance, diseaseClass, subImage }) {
         </div>
         <div className="text-white text-semibold text-[1.2em] flex flex-col justify-center gap-1">
           <h2>
-            Confidance<span className="font-bold"> : </span>
+            Confidence<span className="font-bold"> : </span>
             <span className="font-bold text-green-500">
               {Math.floor(confidance * 100)}
             </span>
